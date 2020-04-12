@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#00ffff"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/register_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="#0000ff"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/register_back"
+            android:layout_centerVertical="true"
+            android:text="注册"
+            android:textSize="35dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            />
+
+    </RelativeLayout>
+    
+    <include
+        layout="@layout/inform_input"
+        android:id="@+id/user_name"
+        />
+
+    <include
+        layout="@layout/inform_input"
+        android:id="@+id/password"
+        />
+
+    <include
+        layout="@layout/inform_input"
+        android:id="@+id/confirm"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <include
+            layout="@layout/inform_input"
+            android:id="@+id/verification"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            />
+
+        <ImageView
+            android:id="@id/verification_pic"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@id/register"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#0fff00"
+        android:text="注册"
+        android:onClick="onClick"
+        android:layout_marginTop="40dp"
+        />
+
+    <TextView
+        android:id="@+id/treaty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="同意《用户协议》"
+        android:layout_marginTop="10dp"
+        />
+
+</LinearLayout>
